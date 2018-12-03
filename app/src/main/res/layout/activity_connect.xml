@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ConnectActivity">
+
+    <TextView
+        android:id="@+id/connectText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Connect to a server"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.ActionMode.Title" />
+
+    <EditText
+        android:id="@+id/host"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Host"
+        android:text="irc.freenode.net"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Port"
+        android:text="6667"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/nick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nick"
+        android:text="s__"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="password"
+        android:text="123456"
+        android:inputType="textPassword" />
+
+    <CheckBox
+        android:id="@+id/auth_nickserv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="NickServ authentication" />
+
+    <EditText
+        android:id="@+id/autojoin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Autojoin channels"
+        android:text="#linux,#haskell,#xml"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/script"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Script to send"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="connect"
+        android:text="Connect" />
+
+</LinearLayout>
